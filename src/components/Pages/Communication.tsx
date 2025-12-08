@@ -278,7 +278,7 @@ const Communication: React.FC = () => {
       {/* Header */}
       <div className="mb-6">
         <h1 className="text-2xl font-bold text-gray-800 mb-2">Communication</h1>
-        <p className="text-gray-500">Suivi des échanges - Dossier XXXXXXXXXX</p>
+        <p className="text-gray-500">Suivi des échanges</p>
       </div>
 
       {/* Filtres */}
