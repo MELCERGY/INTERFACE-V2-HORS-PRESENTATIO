@@ -1,5 +1,6 @@
 import React from 'react';
-import { User, Wrench, MessageSquare, Mail, Phone, Receipt, Calculator, AlertTriangle, Radio, Shield, Filter, ChevronDown, Check, FileText, ArrowDownCircle, ArrowUpCircle, Voicemail } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { User, Wrench, MessageSquare, Mail, Phone, Receipt, Calculator, AlertTriangle, Radio, Shield, Filter, ChevronDown, Check, FileText, ArrowDownCircle, ArrowUpCircle, Voicemail, ArrowLeft } from 'lucide-react';
 
 const Communication: React.FC = () => {
   const [selectedActors, setSelectedActors] = React.useState<string[]>(['tous']);
@@ -275,6 +276,17 @@ const Communication: React.FC = () => {
 
   return (
     <div className="p-6">
+      {/* Retour aux dossiers */}
+      <div className="mb-4">
+        <Link
+          to="/dossiers"
+          className="inline-flex items-center text-[#0053A0] hover:text-[#0076C8] group"
+        >
+          <ArrowLeft size={20} className="mr-2 group-hover:-translate-x-1 transition-transform" />
+          Retour aux dossiers
+        </Link>
+      </div>
+
       {/* Header */}
       <div className="mb-6 bg-white rounded-lg overflow-hidden shadow-sm">
         <div className="bg-gradient-to-r from-[#0053A0] to-[#0076C8] p-3">
