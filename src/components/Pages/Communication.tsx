@@ -276,8 +276,12 @@ const Communication: React.FC = () => {
   return (
     <div className="p-6">
       {/* Header */}
-      <div className="mb-6">
-        <h1 className="text-3xl font-bold text-gray-800">Suivi des échanges</h1>
+      <div className="mb-6 bg-white rounded-lg overflow-hidden shadow-sm">
+        <div className="bg-gradient-to-r from-[#0053A0] to-[#0076C8] p-3">
+          <div className="w-full flex items-center justify-center">
+            <h1 className="text-base md:text-lg font-semibold text-white tracking-normal">SUIVI DES ÉCHANGES</h1>
+          </div>
+        </div>
       </div>
 
       {/* Filtres */}
