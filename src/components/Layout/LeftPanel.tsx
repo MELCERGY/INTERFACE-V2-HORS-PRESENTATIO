@@ -26,28 +26,78 @@ const LeftPanel: React.FC<LeftPanelProps> = ({ collapsed }) => {
 
   const faqItems = [
     {
-      question: "Comment consulter mes documents ?",
-      answer: "Accédez à la section Documents pour consulter tous vos documents de dossier.",
-      link: "/documents",
-      linkText: "Documents"
+      question: "Temps de traitement",
+      answer: "Depuis l'enregistrement de l'OM et le dépôt du rapport"
     },
     {
-      question: "Que signifie VE ?",
-      answer: "VE signifie Véhicule Endommagé. Le véhicule n'est pas autorisé à circuler tant que les réparations n'ont pas été réalisées dans les règles de l'art de l'expertise automobile."
+      question: "Éléments en attente",
+      answer: "Information(s), document(s) qui bloc(s) pour avancer dans le dossier"
     },
     {
-      question: "Que signifie VRADE ?",
-      answer: "VRADE signifie Valeur de Remplacement À Dire d'Expert. C'est la valeur estimée par l'expert pour remplacer le véhicule."
+      question: "Montant d'expertise",
+      answer: "Montant de remise en état du véhicule lié au sinistre"
     },
     {
-      question: "Comment suivre l'avancement ?",
-      answer: "Consultez le Tableau de bord pour voir en temps réel l'état d'avancement de votre dossier.",
+      question: "VRADE",
+      answer: "Valeur de Remplacement à Dire d'Expert"
+    },
+    {
+      question: "VE",
+      answer: "Véhicule Endommagé (Non autorisé à circuler sans le suivi des réparations par un expert dans les règles de l'art de l'expertise automobile)"
+    },
+    {
+      question: "Croquis",
+      answer: "Localisation des points de chocs selon l'intensité représenté par différentes couleurs (jaune : faible / Orange : moyen / fort : Rouge) selon l'expertise"
+    },
+    {
+      question: "Avancement du dossier",
+      answer: "Permet de visualiser rapidement l'état d'avancement du dossier. Coché en vert si l'étape est franchis : ordre de mission = intégration du flux chez BCA, le moyen d'expertise = affichage du moyen d'expertise prévu dans le dossier + date prévue, Examen du véhicule = affichage date à venir / coché en vert si rdv honoré, Issue = si déterminé, Suivi = le détail se trouve dans la section \"suivi\" en dessous, Rapport d'expertise : Mission terminé",
       link: "/",
       linkText: "Tableau de bord"
     },
     {
-      question: "Qui contacter en cas de question ?",
-      answer: "Contactez la DCM (service commercial)."
+      question: "OM",
+      answer: "Les informations évoluent selon les données présentes dans notre système informatique quasi en temps réel"
+    },
+    {
+      question: "Constatations",
+      answer: "Détails des informations selon l'expertise réalisée"
+    },
+    {
+      question: "Rapport",
+      answer: "Information sur le dépôt du rapport d'expertise, la note d'honoraire et d'un éventuel rapport annulé et remplacé"
+    },
+    {
+      question: "Suivi",
+      answer: "Détail d'informations transmis dès lors que l'issue est déterminé et variable selon l'issue du dossier"
+    },
+    {
+      question: "Tableau de bord",
+      answer: "À défaut, c'est la page principale d'un dossier qui s'affiche sur l'interface",
+      link: "/",
+      linkText: "Tableau de bord"
+    },
+    {
+      question: "Communication",
+      answer: "Les échanges entre BCA expertise et les acteurs externes (entrants, sortants, ...)",
+      link: "/communication",
+      linkText: "Communication"
+    },
+    {
+      question: "Bca messages",
+      answer: "Les échanges entre BCA expertise et l'utilisateur connecté sur l'interface",
+      link: "/messages",
+      linkText: "Messages"
+    },
+    {
+      question: "Bibliothèque",
+      answer: "Affichage des documents dans différentes banettes : une banette contenant les documents générés pas BCA expertise, une banette contenant les documents provenants des utilisateurs externes, une banette contenant les photos",
+      link: "/documents",
+      linkText: "Documents"
+    },
+    {
+      question: "Contacts",
+      answer: "Liste des coordonnées des différentes acteurs du dossier"
     }
   ];
 
