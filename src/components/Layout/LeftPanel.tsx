@@ -317,8 +317,6 @@ const FAQItem: React.FC<{
   linkText?: string;
   searchTerm?: string
 }> = ({ question, answer, link, linkText, searchTerm }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
   const highlightText = (text: string, term: string) => {
     if (!term) return text;
 
@@ -335,35 +333,23 @@ const FAQItem: React.FC<{
   };
 
   return (
-    <div className="border-b border-gray-200 pb-2 last:border-b-0 last:pb-0">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full text-left flex items-start justify-between gap-2 py-1"
-      >
-        <span className="text-xs font-medium text-[#0053A0]">
+    <div className="border-b border-gray-200 pb-3 last:border-b-0 last:pb-0">
+      <div className="py-1">
+        <span className="text-xs font-semibold text-[#0053A0] block mb-1">
           {searchTerm ? highlightText(question, searchTerm) : question}
         </span>
-        {isOpen ? (
-          <ChevronUp size={14} className="text-gray-500 flex-shrink-0 mt-0.5" />
-        ) : (
-          <ChevronDown size={14} className="text-gray-500 flex-shrink-0 mt-0.5" />
+        <p className="text-xs text-gray-600 leading-relaxed">
+          {searchTerm ? highlightText(answer, searchTerm) : answer}
+        </p>
+        {link && linkText && (
+          <Link
+            to={link}
+            className="inline-flex items-center text-xs font-medium text-[#0053A0] hover:text-[#003d75] mt-2 hover:underline"
+          >
+            → Accéder à {linkText}
+          </Link>
         )}
-      </button>
-      {isOpen && (
-        <div className="mt-1">
-          <p className="text-xs text-gray-600 leading-relaxed">
-            {searchTerm ? highlightText(answer, searchTerm) : answer}
-          </p>
-          {link && linkText && (
-            <Link
-              to={link}
-              className="inline-flex items-center text-xs font-medium text-[#0053A0] hover:text-[#003d75] mt-2 hover:underline"
-            >
-              → Accéder à {linkText}
-            </Link>
-          )}
-        </div>
-      )}
+      </div>
     </div>
   );
 };
