@@ -51,9 +51,7 @@ const LeftPanel: React.FC<LeftPanelProps> = ({ collapsed }) => {
     },
     {
       question: "Avancement du dossier",
-      answer: "Visualisation de l'état d'avancement de votre dossier à travers les différentes étapes : Ordre de Mission (intégration du flux chez BCA), Moyen d'expertise (affichage du mode d'expertise prévu et date planifiée), Examen du véhicule (date à venir ou validée si rendez-vous honoré), Issue (déterminée ou en cours), Suivi (détails disponibles dans la section dédiée), Rapport d'expertise (mission terminée).",
-      link: "/",
-      linkText: "Tableau de bord"
+      answer: "Visualisation de l'état d'avancement de votre dossier à travers les différentes étapes : Ordre de Mission (intégration du flux chez BCA), Moyen d'expertise (affichage du mode d'expertise prévu et date planifiée), Examen du véhicule (date à venir ou validée si rendez-vous honoré), Issue (déterminée ou en cours), Suivi (détails disponibles dans la section dédiée), Rapport d'expertise (mission terminée)."
     },
     {
       question: "OM (Ordre de Mission)",
