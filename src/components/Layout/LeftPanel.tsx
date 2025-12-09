@@ -27,77 +27,77 @@ const LeftPanel: React.FC<LeftPanelProps> = ({ collapsed }) => {
   const faqItems = [
     {
       question: "Temps de traitement",
-      answer: "Depuis l'enregistrement de l'OM et le dépôt du rapport"
+      answer: "Délai calculé depuis l'enregistrement de l'Ordre de Mission (OM) jusqu'au dépôt du rapport d'expertise."
     },
     {
       question: "Éléments en attente",
-      answer: "Information(s), document(s) qui bloc(s) pour avancer dans le dossier"
+      answer: "Informations ou documents nécessaires pour poursuivre le traitement du dossier. Ces éléments bloquent actuellement la progression de votre dossier."
     },
     {
       question: "Montant d'expertise",
-      answer: "Montant de remise en état du véhicule lié au sinistre"
+      answer: "Estimation du coût de remise en état du véhicule suite au sinistre, déterminée par l'expert."
     },
     {
       question: "VRADE",
-      answer: "Valeur de Remplacement à Dire d'Expert"
+      answer: "Valeur de Remplacement À Dire d'Expert - Estimation de la valeur du véhicule établie par l'expert pour déterminer le montant de remplacement."
     },
     {
       question: "VE",
-      answer: "Véhicule Endommagé (Non autorisé à circuler sans le suivi des réparations par un expert dans les règles de l'art de l'expertise automobile)"
+      answer: "Véhicule Endommagé - Statut indiquant que le véhicule n'est pas autorisé à circuler tant que les réparations n'ont pas été effectuées et validées par un expert conformément aux règles de l'art de l'expertise automobile."
     },
     {
       question: "Croquis",
-      answer: "Localisation des points de chocs selon l'intensité représenté par différentes couleurs (jaune : faible / Orange : moyen / fort : Rouge) selon l'expertise"
+      answer: "Représentation visuelle des points d'impact identifiés lors de l'expertise. L'intensité des dommages est indiquée par un code couleur : jaune (impact faible), orange (impact moyen), rouge (impact fort)."
     },
     {
       question: "Avancement du dossier",
-      answer: "Permet de visualiser rapidement l'état d'avancement du dossier. Coché en vert si l'étape est franchis : ordre de mission = intégration du flux chez BCA, le moyen d'expertise = affichage du moyen d'expertise prévu dans le dossier + date prévue, Examen du véhicule = affichage date à venir / coché en vert si rdv honoré, Issue = si déterminé, Suivi = le détail se trouve dans la section \"suivi\" en dessous, Rapport d'expertise : Mission terminé",
+      answer: "Visualisation de l'état d'avancement de votre dossier à travers les différentes étapes : Ordre de Mission (intégration du flux chez BCA), Moyen d'expertise (affichage du mode d'expertise prévu et date planifiée), Examen du véhicule (date à venir ou validée si rendez-vous honoré), Issue (déterminée ou en cours), Suivi (détails disponibles dans la section dédiée), Rapport d'expertise (mission terminée).",
       link: "/",
       linkText: "Tableau de bord"
     },
     {
-      question: "OM",
-      answer: "Les informations évoluent selon les données présentes dans notre système informatique quasi en temps réel"
+      question: "OM (Ordre de Mission)",
+      answer: "Les informations relatives à l'Ordre de Mission sont mises à jour en temps réel selon les données enregistrées dans notre système informatique."
     },
     {
       question: "Constatations",
-      answer: "Détails des informations selon l'expertise réalisée"
+      answer: "Détails techniques des observations effectuées par l'expert lors de l'examen du véhicule."
     },
     {
       question: "Rapport",
-      answer: "Information sur le dépôt du rapport d'expertise, la note d'honoraire et d'un éventuel rapport annulé et remplacé"
+      answer: "Section regroupant les informations relatives au dépôt du rapport d'expertise, à la note d'honoraire, ainsi qu'aux éventuels rapports annulés et remplacés."
     },
     {
       question: "Suivi",
-      answer: "Détail d'informations transmis dès lors que l'issue est déterminé et variable selon l'issue du dossier"
+      answer: "Informations détaillées communiquées dès lors que l'issue du dossier est déterminée. Le contenu varie selon la nature de l'issue (réparation, perte totale, etc.)."
     },
     {
       question: "Tableau de bord",
-      answer: "À défaut, c'est la page principale d'un dossier qui s'affiche sur l'interface",
+      answer: "Page principale d'un dossier, affichée par défaut lors de l'accès à l'interface. Elle présente une vue d'ensemble des informations essentielles.",
       link: "/",
       linkText: "Tableau de bord"
     },
     {
       question: "Communication",
-      answer: "Les échanges entre BCA expertise et les acteurs externes (entrants, sortants, ...)",
+      answer: "Historique complet des échanges entre BCA Expertise et les acteurs externes du dossier (courriers entrants, sortants, etc.).",
       link: "/communication",
       linkText: "Communication"
     },
     {
-      question: "Bca messages",
-      answer: "Les échanges entre BCA expertise et l'utilisateur connecté sur l'interface",
+      question: "BCA Messages",
+      answer: "Messagerie dédiée aux échanges directs entre BCA Expertise et l'utilisateur connecté sur l'interface.",
       link: "/messages",
       linkText: "Messages"
     },
     {
       question: "Bibliothèque",
-      answer: "Affichage des documents dans différentes banettes : une banette contenant les documents générés pas BCA expertise, une banette contenant les documents provenants des utilisateurs externes, une banette contenant les photos",
+      answer: "Espace de consultation des documents organisés en trois catégories : documents générés par BCA Expertise, documents transmis par les utilisateurs externes, et photographies du dossier.",
       link: "/documents",
       linkText: "Documents"
     },
     {
       question: "Contacts",
-      answer: "Liste des coordonnées des différentes acteurs du dossier"
+      answer: "Répertoire des coordonnées de l'ensemble des intervenants et acteurs impliqués dans le traitement du dossier."
     }
   ];
 
