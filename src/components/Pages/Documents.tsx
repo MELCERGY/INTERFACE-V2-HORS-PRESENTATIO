@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Grid2x2 as Grid, List, ChevronRight, ChevronDown, Folder, FolderOpen, Filter, Check, ArrowLeft } from 'lucide-react';
+import { Grid2x2 as Grid, List, ChevronRight, ChevronDown, Folder, FolderOpen, Filter, Check } from 'lucide-react';
 import DocumentList from '../Documents/DocumentList';
 import DocumentGrid from '../Documents/DocumentGrid';
 import { Document } from '../Common/DocumentCard';
@@ -862,24 +861,10 @@ const Documents: React.FC = () => {
 
   return (
     <div className="p-6">
-      {/* Retour aux dossiers */}
-      <div className="mb-4">
-        <Link
-          to="/dossiers"
-          className="inline-flex items-center text-[#0053A0] hover:text-[#0076C8] group"
-        >
-          <ArrowLeft size={20} className="mr-2 group-hover:-translate-x-1 transition-transform" />
-          Retour aux dossiers
-        </Link>
-      </div>
-
       {/* Header */}
-      <div className="mb-6 bg-white rounded-lg overflow-hidden shadow-sm">
-        <div className="bg-gradient-to-r from-[#0053A0] to-[#0076C8] p-3">
-          <div className="w-full flex items-center justify-center">
-            <h1 className="text-base md:text-lg font-semibold text-white tracking-normal">BIBLIOTHÈQUE</h1>
-          </div>
-        </div>
+      <div className="mb-6">
+        <h1 className="text-2xl font-bold text-gray-800 mb-2">Bibliothèque</h1>
+        <p className="text-gray-500">Dossier XXXXXXXXXX</p>
       </div>
 
       {/* Category Tabs - Horizontal */}

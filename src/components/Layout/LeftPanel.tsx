@@ -235,7 +235,7 @@ const LeftPanel: React.FC<LeftPanelProps> = ({ collapsed }) => {
       {/* Spacer */}
       <div className="flex-1" />
 
-      {/* Notice d'utilisation */}
+      {/* FAQ */}
       <div className="flex-none border-t border-gray-200 py-3">
         <div className="px-3">
           <button
@@ -244,7 +244,7 @@ const LeftPanel: React.FC<LeftPanelProps> = ({ collapsed }) => {
           >
             <div className="flex items-center">
               <HelpCircle size={16} className="text-[#0053A0] mr-2" />
-              <h3 className="text-[#0053A0] text-sm font-semibold">Notice d'utilisation</h3>
+              <h3 className="text-[#0053A0] text-sm font-semibold">FAQ</h3>
             </div>
             {sections.faq ? <ChevronUp size={16} className="text-[#0053A0]" /> : <ChevronDown size={16} className="text-[#0053A0]" />}
           </button>
@@ -255,7 +255,7 @@ const LeftPanel: React.FC<LeftPanelProps> = ({ collapsed }) => {
               <Search size={14} className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400" />
               <input
                 type="text"
-                placeholder="Rechercher dans la notice..."
+                placeholder="Rechercher dans la FAQ..."
                 value={faqSearchTerm}
                 onChange={(e) => setFaqSearchTerm(e.target.value)}
                 className="w-full pl-8 pr-3 py-2 text-xs border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0053A0] focus:border-transparent"
