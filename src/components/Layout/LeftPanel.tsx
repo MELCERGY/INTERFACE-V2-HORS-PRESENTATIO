@@ -238,18 +238,14 @@ const LeftPanel: React.FC<LeftPanelProps> = ({ collapsed }) => {
       {/* Notice d'utilisation */}
       <div className="flex-none border-t border-gray-200 py-3">
         <div className="px-3">
-          <button
-            onClick={() => toggleSection('faq')}
-            className="w-full py-2 px-3 flex items-center justify-between bg-gray-100 hover:bg-gray-200 transition-colors rounded-lg"
-          >
+          <div className="w-full py-2 px-3 flex items-center justify-between bg-gray-100 rounded-lg opacity-50 cursor-not-allowed">
             <div className="flex items-center">
               <HelpCircle size={16} className="text-[#0053A0] mr-2" />
               <h3 className="text-[#0053A0] text-sm font-semibold">Notice d'utilisation</h3>
             </div>
-            {sections.faq ? <ChevronUp size={16} className="text-[#0053A0]" /> : <ChevronDown size={16} className="text-[#0053A0]" />}
-          </button>
+          </div>
         </div>
-        {sections.faq && (
+        {false && (
           <div className="px-3 pt-3 space-y-3 bg-gray-50 mt-2 mx-3 rounded-lg pb-3">
             <div className="relative mb-3">
               <Search size={14} className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400" />
