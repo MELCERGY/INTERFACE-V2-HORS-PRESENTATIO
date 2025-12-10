@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { X, Plus, Paperclip, Upload, ChevronDown, Check, ArrowLeft } from 'lucide-react';
+import { X, Plus, Paperclip, Upload, ChevronDown, Check } from 'lucide-react';
 
 interface MessageThread {
   id: string;
@@ -91,28 +90,13 @@ const Messages: React.FC = () => {
                   (!requiresAttachment || attachedFiles.length > 0);
 
   return (
-    <div className="p-6">
-      {/* Retour aux dossiers */}
-      <div className="mb-4">
-        <Link
-          to="/dossiers"
-          className="inline-flex items-center text-[#0053A0] hover:text-[#0076C8] group"
-        >
-          <ArrowLeft size={20} className="mr-2 group-hover:-translate-x-1 transition-transform" />
-          Retour aux dossiers
-        </Link>
-      </div>
-
+    <div className="h-full bg-gray-50">
       {/* Header */}
-      <div className="mb-6 bg-white rounded-lg overflow-hidden shadow-sm">
-        <div className="bg-gradient-to-r from-[#0053A0] to-[#0076C8] p-3">
-          <div className="w-full flex items-center justify-center">
-            <h1 className="text-base md:text-lg font-semibold text-white tracking-normal">BCA MESSAGES</h1>
-          </div>
-        </div>
+      <div className="bg-[#00257A] text-white p-3 font-semibold">
+        Messages
       </div>
 
-      <div className="bg-gray-50 -mx-6 -mb-6 px-6 pb-6">
+      <div className="p-6">
         {/* Nouveau Message Button */}
         <button
           onClick={() => setShowNewMessageModal(true)}
